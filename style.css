@@ -1,0 +1,45 @@
+:root {
+  --fundo: #f5ede4;
+  --texto: #3b2a1e;
+  --suave: #7a6555;
+  --linha: #e0d3c4;
+  --destaque: #8a5a2b;
+  --cartao: #fbf6ef;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #1d1612;
+    --texto: #f1e7db;
+    --suave: #b9a897;
+    --linha: #3a2e26;
+    --destaque: #d9a566;
+    --cartao: #261d17;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 17px;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+header.topo { border-bottom: 1px solid var(--linha); }
+header.topo div { max-width: 720px; margin: 0 auto; padding: 16px 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; }
+header.topo .marca { font-weight: 700; font-size: 20px; color: var(--texto); text-decoration: none; margin-right: auto; }
+header.topo a { color: var(--suave); text-decoration: none; font-size: 15px; }
+header.topo a:hover { color: var(--destaque); }
+h1 { font-size: 30px; line-height: 1.25; margin: 8px 0 4px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+h3 { font-size: 17px; margin: 22px 0 4px; }
+p, li { margin: 8px 0; }
+ul { padding-left: 22px; }
+a { color: var(--destaque); }
+.data { color: var(--suave); font-size: 15px; margin-bottom: 24px; }
+.resumo { background: var(--cartao); border: 1px solid var(--linha); border-radius: 14px; padding: 4px 18px 10px; margin: 20px 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--linha); }
+th { color: var(--suave); font-weight: 600; }
+footer { max-width: 720px; margin: 0 auto; padding: 24px 20px 48px; color: var(--suave); font-size: 14px; border-top: 1px solid var(--linha); }
